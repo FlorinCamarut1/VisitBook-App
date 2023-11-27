@@ -43,10 +43,8 @@ function Map() {
   }, [getPosition]);
 
   const handleYourLocation = () => {
-    getPosition();
-
     navigate(
-      `form?lat=${geolocationPosition?.lat}&lng=${geolocationPosition?.lng}`
+      `form?lat=${geolocationPosition.lat}&lng=${geolocationPosition.lng}`
     );
   };
 
