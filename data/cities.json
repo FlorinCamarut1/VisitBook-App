@@ -35,6 +35,18 @@
         "lng": 26.510888
       },
       "id": 3
+    },
+    {
+      "cityName": "Amt Creuzburg",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2023-11-27T15:52:23.997Z",
+      "notes": "",
+      "position": {
+        "lat": 51.096622944505384,
+        "lng": 10.371093747563789
+      },
+      "id": 4
     }
   ]
 }

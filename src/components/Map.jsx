@@ -19,7 +19,7 @@ function Map() {
   const { cities } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);
   const [mapLat, mapLng] = useURLPosition();
-
+  console.log(cities);
   const navigate = useNavigate();
   const {
     isLoading: isLoadingPosition,
