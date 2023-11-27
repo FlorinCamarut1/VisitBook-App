@@ -4,7 +4,7 @@
 A project made with React + Vite and Leaflet to handle the map:
 The project has a fake login with predefined login id and password for now, you can add locations you visited and some comment about them, date when you visited and store into a list , data is stored as JSON into data/cities.json file.
 
-You can check out my project deployed at : https://visit-book-8q1qz4aac-florincamarut1.vercel.app/
+You can check out my project deployed at : https://visit-book-a86eyqn62-florincamarut1.vercel.app/
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
