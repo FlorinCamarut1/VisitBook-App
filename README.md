@@ -6,7 +6,7 @@ Desktop Only for now
 
 
 A project made with React + Vite and Leaflet to handle the map:
-The project has a fake login with predefined login id and password for now, you can add locations you visited and some comment about them, date when you visited and store into a list , data is stored as JSON into db.json Mock Server on Render.
+The project has a fake login with predefined login id and password for now, you can add locations you visited and some comment about them, date when you visited and store into a list , data is stored into db.json Mock Server on Render.
 .
 
 You can check out my project deployed at : https://visit-book.netlify.app/
