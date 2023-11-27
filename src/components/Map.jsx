@@ -18,19 +18,14 @@ import { useURLPosition } from '../hooks/useURLPosition';
 function Map() {
   const { cities } = useCities();
   const [mapPosition, setMapPosition] = useState([40, 0]);
-  const [mapLat, mapLng, setSearchParams] = useURLPosition();
-  const navigate = useNavigate();
+  const [mapLat, mapLng] = useURLPosition();
 
+  const navigate = useNavigate();
   const {
     isLoading: isLoadingPosition,
     position: geolocationPosition,
     getPosition,
   } = useGeolocation();
-
-  const convGeoLoactionFormat = [
-    geolocationPosition?.lat,
-    geolocationPosition?.lng,
-  ];
 
   const positionsEqual = (mapPosition, convGeoLoactionFormat) => {
     return (
@@ -44,21 +39,23 @@ function Map() {
   }, [mapLat, mapLng]);
 
   useEffect(() => {
-    if (geolocationPosition)
-      setMapPosition([geolocationPosition.lat, geolocationPosition.lng]);
-  }, [geolocationPosition]);
+    getPosition();
+  }, [getPosition]);
 
   const handleYourLocation = () => {
     getPosition();
-    if (geolocationPosition) {
-      navigate(
-        `form?lat=${convGeoLoactionFormat[0]}&lng=${convGeoLoactionFormat[1]}`
-      );
-    }
+
+    navigate(
+      `form?lat=${geolocationPosition?.lat}&lng=${geolocationPosition?.lng}`
+    );
   };
+
   return (
     <div className={styles.mapContainer}>
-      {!positionsEqual(mapPosition, convGeoLoactionFormat) && (
+      {!positionsEqual(mapPosition, [
+        geolocationPosition?.lat,
+        geolocationPosition?.lng,
+      ]) && (
         <Button type='position' onClick={handleYourLocation}>
           {isLoadingPosition ? 'Loading...' : 'Use your position'}
         </Button>
