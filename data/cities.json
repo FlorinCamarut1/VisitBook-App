@@ -13,26 +13,26 @@
       "id": 1
     },
     {
-      "cityName": "la Guingueta d'Aneu",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2023-11-27T11:31:53.731Z",
+      "cityName": "Ogre",
+      "country": "Latvia",
+      "emoji": "🇱🇻",
+      "date": "2023-11-27T13:49:12.109Z",
       "notes": "",
       "position": {
-        "lat": 42.53689200787317,
-        "lng": 1.1206054687500002
+        "lat": 56.728621973140754,
+        "lng": 25.136718750000004
       },
       "id": 2
     },
     {
-      "cityName": "Villarta de los Montes",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2023-11-27T11:43:30.190Z",
-      "notes": "",
+      "cityName": "Liteni",
+      "country": "Romania",
+      "emoji": "🇷🇴",
+      "date": "2023-11-27T13:50:14.695Z",
+      "notes": "cel mai bun oras din toate gropile ",
       "position": {
-        "lat": 39.232253141714914,
-        "lng": -4.7900390625
+        "lat": 47.5176647,
+        "lng": 26.510888
       },
       "id": 3
     }
